@@ -22,7 +22,7 @@ public class Agenda {
     }
 
     /**
-     * Método para añadir nombre y teléfono a la agenda.
+     * Metodo para añadir nombre y teléfono a la agenda.
      * Si el contacto ya existe, añade el número de teléfono al contacto existente.
      * Si el contacto no existe, crea un nuevo contacto con el nombre y el número de teléfono.
      * @param name
@@ -47,7 +47,7 @@ public class Agenda {
     }
 
     /**
-     * Método para eliminar un contacto de la agenda por nombre.
+     * Metodo para eliminar un contacto de la agenda por nombre.
      * Si el contacto no existe, no hace nada.
      * @param name
      * @return void
@@ -66,7 +66,7 @@ public class Agenda {
     }
 
     /**
-     * Método para modificar un número de teléfono de un contacto.
+     * Metodo para modificar un número de teléfono de un contacto.
      * Modifica el numero de un contacto por un nuevo número.
      * @param name
      * @param oldPhone
