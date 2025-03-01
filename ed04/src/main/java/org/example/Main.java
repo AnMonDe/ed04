@@ -3,7 +3,7 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
         // Crear una nueva agendaContactos.
-        Agenda agendaContactos = initAgenda();
+        iAgenda agendaContactos = initAgenda();
 
         // Imprimir todos los contactos de la agendaContactos.
         System.out.println("Todos los contactos: ");
@@ -26,8 +26,8 @@ public class Main {
         }
     }
 
-    private static Agenda initAgenda() {
-        Agenda agendaContactos = new Agenda();
+    private static iAgenda initAgenda() {
+        iAgenda agendaContactos = new Agenda();
 
         // Añadir contactos a la agendaContactos.
         agendaContactos.addContact("John Doe", "1234567890");

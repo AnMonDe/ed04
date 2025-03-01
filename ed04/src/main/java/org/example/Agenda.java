@@ -11,7 +11,7 @@ import java.util.List;
  * @version 1.0 01-03-2025
  * @since 1.0
  */
-public class Agenda {
+public class Agenda implements iAgenda {
     private List<Persona> contacts; // Lista de Contacto
 
     /**
@@ -30,6 +30,7 @@ public class Agenda {
      * @return void
      * @since 1.0
      */
+    @Override
     public void addContact(String name, String phone) {
         boolean exists = false;
         for (Persona c : contacts) {
@@ -53,6 +54,7 @@ public class Agenda {
      * @return void
      * @since 1.0
      */
+    @Override
     public void removeContact(String name) {
         Iterator<Persona> it = contacts.iterator();
 
@@ -74,6 +76,7 @@ public class Agenda {
      * @return void
      * @since 1.0
      */
+    @Override
     public void modifyPhoneNumber(String name, String oldPhone, String newPhone) {
         for (Persona c : contacts) {
             if (c.getName().equalsIgnoreCase(name)) {
@@ -89,6 +92,7 @@ public class Agenda {
     }
 
 
+    @Override
     public List<Persona> getContacts() {
         return this.contacts;
     }
