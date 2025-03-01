@@ -12,7 +12,7 @@ import java.util.List;
  * @since 1.0
  */
 public class Agenda implements iAgenda {
-    private List<Persona> contacts; // Lista de Contacto
+    private List<Persona> contacts;  // Lista de Contacto
 
     /**
      * Constructor para inicializar la lista de contactos.
